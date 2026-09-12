@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О себе — Футуролог и концепт-художник</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    h1, h2 {
+      font-family: "Courier New", monospace;
+      font-size: 2rem;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="badge">v0.3</span>
+    <h1>Лев Лесников</h1>
+    <h1 class="neon">Футуролог и концепт-художник</h1>
+  </header>
+
+<nav class="nav" aria-label="Основное меню">
+  <ul class="nav-list">
+    <li><a href="#skills">Навыки</a></li>
+    <li><a href="#projects">Проекты</a></li>
+    <li><a href="#tech">Технологии</a></li>
+    <li><a href="#forecast">Прогнозы</a></li>
+    <li><a href="#contact">Контакты</a></li>
+  </ul>
+</nav>
+
+  <main style="overflow: hidden;">
+    <img src="image.jpg" alt="Портрет футуролога и концепт-художника Льва Лесникова" width="200" height="200">
+
+    <section class="card" id="skills">
+      <h2 class="neon">Навыки</h2>
+      <ul>
+        <li>Прогнозирование и визуализация будущего</li>
+        <li>Создание концепт-артов</li>
+        <li>Сценарное планирование</li>
+        <li>Работа с трендами</li>
+      </ul>
+    </section>
+
+    <section class="card" id="projects">
+      <h2 class="neon">Проекты</h2>
+      <ol>
+        <li>Концепт города будущего «Аэрополис»</li>
+        <li>Технология автономных энергосетей мегаполиса</li>
+        <li>Космическая колония «Новый горизонт» на Марсе</li>
+        <li>Серия концепт-артов «Сны нейросети»</li>
+      </ol>
+    </section>
+
+    <section class="card" id="tech">
+      <h2 class="neon">Технологии будущего</h2>
+      <div class="cards-flex">
+        <article class="tech-card">
+          <h3 class="neon">Термоядерный синтез</h3>
+          <p>Компактные станции с <mark>управляемым термоядерным синтезом</mark> дадут городам чистую и почти бесконечную энергию.</p>
+          <p class="year">Год прогноза: <time datetime="2038">2038</time></p>
+        </article>
+        <article class="tech-card">
+          <h3 class="neon">Нейроинтерфейсы</h3>
+          <p>Прямое <mark>соединение мозга с компьютером</mark> позволит управлять техникой силой мысли и мгновенно обмениваться знаниями.</p>
+          <p class="year">Год прогноза: <time datetime="2045">2045</time></p>
+        </article>
+        <article class="tech-card">
+          <h3 class="neon">Квантовая связь</h3>
+          <p><mark>Невзламываемые сети</mark> на квантовой запутанности объединят все континенты и космические колонии.</p>
+          <p class="year">Год прогноза: <time datetime="2040">2040</time></p>
+        </article>
+        <article class="tech-card">
+          <h3 class="neon">Автономные мегаполисы</h3>
+          <p>Города с <mark>самоуправляемыми системами</mark>: ИИ управляет энергией, логистикой и климатом без участия человека.</p>
+          <p class="year">Год прогноза: <time datetime="2050">2050</time></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="forecast">
+      <div class="grid">
+        <h2 class="neon grid-title">Прогнозы по сферам</h2>
+        <article class="grid-item">
+          <h3 class="neon">Энергетика</h3>
+          <p>Полный переход на <mark>термоядерную и солнечную генерацию</mark>, отказ от ископаемого топлива.</p>
+          <p class="prob">Вероятность: <data value="0.9">90%</data></p>
+        </article>
+        <article class="grid-item">
+          <h3 class="neon">Медицина</h3>
+          <p><mark>Генное редактирование</mark> и печать органов поднимут среднюю продолжительность жизни выше 120 лет.</p>
+          <p class="prob">Вероятность: <data value="0.75">75%</data></p>
+        </article>
+        <article class="grid-item">
+          <h3 class="neon">Космос</h3>
+          <p>Постоянная <mark>колония на Марсе</mark> и промышленное производство за пределами земной орбиты.</p>
+          <p class="prob">Вероятность: <data value="0.6">60%</data></p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="card">
+      <h2 class="neon">Технология, которая изменит мир</h2>
+      <p>Управляемый термоядерный синтез: неисчерпаемый источник чистой энергии, который заменит ископаемое топливо и сделает энергию доступной в любой точке планеты и в космосе.</p>
+    </aside>
+
+    <form class="card" id="contact">
+      <h2 class="neon">Обратная связь</h2>
+      <label for="name">Имя
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+      </label>
+      <label for="email">Email
+        <input type="email" id="email" name="email" placeholder="Введите ваш email">
+      </label>
+      <label for="message">Сообщение
+        <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 Лев Лесников</p>
+    <p><a href="https://github.com/leipfer/932402.Lesnikov.Lev.lab3">Репозиторий на GitHub</a></p>
+  </footer>
+</body>
+</html>
